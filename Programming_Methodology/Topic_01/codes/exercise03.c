@@ -1,9 +1,12 @@
 #include<stdio.h>
 
 int main(){
-    // Write a C program to compute the perimeter and area of a rectangle with a height provided by user
+    // Write a C program to compute the perimeter and area of \
+    a rectangle with a height provided by user
 
-    // Attention: The requirement only asks a height provided by user, so we can define a width as a fixed value and not a constant.
+    // Attention: The requirement only asks a height provided \
+    by user, so we can define a width as a fixed value and not \
+    a constant.
 
     int width = 10, height, perimeter, area;
 

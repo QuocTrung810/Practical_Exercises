@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 int main(){
-    // Write a C program to convert the temperature from Celsius to Fahrenheit.
+    // Write a C program to convert the temperature \
+    from Celsius to Fahrenheit.
 
     float const FAHRENHEIT = 33.8;
 

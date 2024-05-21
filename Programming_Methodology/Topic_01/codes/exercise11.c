@@ -4,7 +4,8 @@ int main(){
     // Write a C program to input a character and check whether it is alphanumeric or not.
     char character;
 
-    // Hint: We use ASCII table (American Standard Code for Information Interchange) to check whether input character is alphanumeric or not.
+    // Hint: We use ASCII table (American Standard Code for Information \
+    Interchange) to check whether input character is alphanumeric or not.
 
     printf("Entering the character: ");
     scanf("%c", &character);

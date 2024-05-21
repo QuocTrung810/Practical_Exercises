@@ -1,9 +1,13 @@
 #include<stdio.h>
 
 int main(){
-    // Write a C program prompting user to input two integer numbers, then compute and print the results of addition, subtraction, multiplication, division, and remainder.
+    // Write a C program prompting user to input two integer \
+    numbers, then compute and print the results of addition, \
+    subtraction, multiplication, division, and remainder.
 
-    // Hint: Using `scanf` function to enter input from the terminal and `printf` to display the output on terminal. Defining two variables to store values of two numbers.
+    // Hint: Using `scanf` function to enter input from the \
+    terminal and `printf` to display the output on terminal. \
+    Defining two variables to store values of two numbers.
 
     // Defining two variables
     int the_first_number;

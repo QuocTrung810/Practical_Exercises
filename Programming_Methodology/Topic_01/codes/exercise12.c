@@ -1,9 +1,12 @@
 #include<stdio.h>
 
 int main(){
-    // Write a C program to input angles of a triangle and check whether triangle is valid or not.
+    // Write a C program to input angles of a triangle and \
+    check whether triangle is valid or not.
 
-    // Hint: The valid condition makes a triangle from three angles, which is the sum of three angles must be equal 180 degrees
+    // Hint: The valid condition makes a triangle from three \
+    angles, which is the sum of three angles must be equal 180 \
+    degrees
 
     int first_angle, second_angle, third_angle;
 
