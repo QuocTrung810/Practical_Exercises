@@ -25,25 +25,31 @@ After completely download the appropriate setup file, let's begin the installati
 From **Figure 1** to **Figure 10** show the step-by-step guild to successfully install Cygwin and GCC enviroment on your system.
 
 **Figure 1**: Welcome screen of Cygwin installation
+
 ![Figure 1 Welcome screen of Cygwin installation](../asset/image/Topic_01/figure1_welcome_screen_of_cygwin_installation.png)
 
 **Figure 2**: Choose the way to download the installation source
+
 ![Figure 2 Choose the way to download the installation source](../asset/image/Topic_01/figure2_choose_the_way_to_download_the_installation_source.png)
 
 **Figure 3**: Select root install directory
+
 ![Select root install directory](../asset/image/Topic_01/figure3_select_root_install_directory.png)
 
 **Figure 4**: Select the directory of local package
+
 ![Select the directory of local package](../asset/image/Topic_01/figure4_select_the_directory_of_local_package.png)
 
 **Figure 5**: Select your internet connection
+
 ![Select your internet connection](../asset/image/Topic_01/figure5_select_your_internet_connection.png)
 
 **Figure 6**: Select a download site
+
 ![Select a download site](../asset/image/Topic_01/figure6_select_a_download_site.png)
 
 **Figure 7**: Select package
-> Note: This is the most important step is in **Figure 7**, you must select the following components to work with C/C++ environment on Cygwin, by clicking "*Skip*" marker:
+> Note: This is the most important step, you must select the following components to work with C/C++ environment on Cygwin, by clicking "*Skip*" marker:
 
 - **gcc-core**: C compiler sub-package.
 - **gcc-g++**: C++ sub-package.
@@ -55,12 +61,15 @@ From **Figure 1** to **Figure 10** show the step-by-step guild to successfully i
 ![Select package](../asset/image/Topic_01/figure7_select_package.png)
 
 **Figure 8**: Resolving dependencies for setup process
+
 ![Resolving dependencies for setup process](../asset/image/Topic_01/figure8_resolving_dependencies_for_setup_process.png)
 
 **Figure 9**: Installing Cygwin and components
+
 ![Installing Cygwin and components](../asset/image/Topic_01/figure9_installing_cygwin_and_components.png)
 
 **Figure 10**: Installation complete screen
+
 ![Installation complete screen](../asset/image/Topic_01/figure10_installation_complete_screen.png)
 
 ### 2.2 Add Cygwin to System Path
