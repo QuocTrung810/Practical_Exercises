@@ -8,7 +8,7 @@ It is a very popular language, despite being old. The main reason for its popula
 
 ![C programming language](../asset/image/Topic_01/topic-01__C-Programming-Language.png)
 
-C is strongly associated with UNIX, as it was developed to write the UNIX operating system.
+C is strongly associated with UNIX, as it was developed to write the [UNIX](https://en.wikipedia.org/wiki/Unix) operating system.
 
 ## 2. Development Environment
 
@@ -74,7 +74,7 @@ From **Figure 1** to **Figure 10** show the step-by-step guild to successfully i
 
 ### 2.2 Add Cygwin to System Path
 
-After we have successfully all requirement components to work with C/C++ on Cygwin environment, but you can only call Cygwin commands in Cygwin Terminal. The question is, can call Cygwin commands in within either Windows CMD command-line or Windows PowerShell. Absoblutely, the answer is "Yes", we need few more steps to do this. First, you need to navigate to System Properties windows by following step-by-step:
+After we have successfully all requirement components to work with C/C++ on Cygwin environment, but you can only call Cygwin commands in Cygwin Terminal. The question is, can call Cygwin commands in within either Windows CMD[^3] command-line or Windows PowerShell. Absoblutely, the answer is "Yes", we need few more steps to do this. First, you need to navigate to System Properties windows by following step-by-step:
 
 With Windows 11:
 
@@ -120,3 +120,4 @@ You had an overview of a program in C. Now, we focus on how to compile your docu
 ----
 [^1]: Wikipedia, "C (programming language)", 17 May 2024. [Online]. Available: [Here](https://en.wikipedia.org/wiki/C_(programming_language)) [Accessed 21 May 2021]
 [^2]: [Cygwin](https://www.cygwin.com/)
+[^3]: [CMD.exe](https://en.wikipedia.org/wiki/Cmd.exe)
