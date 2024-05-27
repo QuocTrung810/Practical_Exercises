@@ -13,4 +13,4 @@ int main(){
     return 0;
 }
 
-// Note: I will put the function name into `the function name`
+// Note: I will put the function name into the backticks - `function_name`
