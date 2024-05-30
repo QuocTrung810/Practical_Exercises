@@ -154,6 +154,56 @@ The below table shows several fundamental datatypes of C, along with the sizes a
 | `double`     | 8      | 64-but IEEE 754 single-precision float, $1.7E+/-308$ (15 digits)            |
 | `bool`       | 1      | `true` or `false`                                                           |
 
+### **3.2 Variables and Constants**
+
+In C, and like the most programming languages, is able to use named variables and their contents. Variables are simply names used to refer to some location in memory - a location that holds a value with which we are working. To declare a variable in C, it has to begin with the data type, then the variable name, the optional part is the assigned content for the variable. Variable names in C are made up of letters (upper and lower case) and digits. The underscore character ("_") is also permitted. Names must not begin with a digit and do not use any special prefix characters. Upper and lower case letters are distinct, so *x* and *X* to different names, and all upper case for symbolic constants.
+
+```C
+// Using variable
+#include<stdio.h>
+
+int main(){
+    int age = 18;
+    printf("Happy &d Birthday!\n", age);
+    return 0;
+}
+```
+
+The above program declares a variable, which is age, has `int` type and assigns its value is 18. Then, use `printf` statement to print the content of age on the screen, between the predefined sequence of characters. The `%d` character indicates the the compiler to replace its current position to the value of `age`. The below program will calculate the circumference of a circle by prompting user to input a radius, and then the circumference of corresponding circle.
+
+```C
+\\ curcle.c
+#include<stdio.h>
+
+int main(){
+    const float PI = 3.14;
+    int radius;
+    float circumference;
+
+    printf("Enter the radius: "); // prompt
+    scanf("%d", &radius); // read an integer
+
+    circumference = 2 * PI * radius
+
+    printf("Circumference: %f\n", circumference);
+    return 0;
+}
+```
+
+The above program declares a constant variable `PI` (line 5) and two variables (line 6, 7), which are `radius` and `circumference`. To declare a constant variable, we have to begin with `const` keyword; from that point, it becomes a read-only variable, that means, you can't edit its value. Next, prompt the user to input radius of circle at line 9, and the get assign the input's value to `radius` variable (line 10). You should note that, since the radius is an integer number, we use `%d`. At line 12. we calculate the circumference of the current circle on the right of "-" symbol, then assign its value to the left variable, which is `circumference`. Finally, print the result on the screen, but `circumference` is float number, we use `%f` in indicate the computer to print a floating-point number at corresponding position.
+
+### **3.3 Arithmetic operators**
+
+To calculate the result of an arithmetic expression, C provides some basic arithmetic operators. The arithmetic operators are binary operators, that means, the operator + has to have two operandsm for example "3+7".
+
+| *Arithmetic operator* | *Operator*     | *Algebraic expression*          | *C expression* |
+| :--:                  | :--:           | :--:                            | :--:           |
+| `+`                   | Addition       | $x + 7$                         | `x + 7`        |
+| `-`                   | Subtraction    | $y - z$                         | `y + z`        |
+| `*`                   | Multiplication | $a x b$                         | `a * b`        |
+| `/`                   | Division       | $x/y$ or $\frac{x}{y}$ or $x÷y$ | `x / y`        |
+| `%`                   | Remainder      | r mod s                         | `r%s`          |
+
 ----
 [^1]: Wikipedia, "C (programming language)", 17 May 2024. [Online]. Available: [Here](https://en.wikipedia.org/wiki/C_(programming_language)) [Accessed 21 May 2021]
 [^2]: [Cygwin](https://www.cygwin.com/)
