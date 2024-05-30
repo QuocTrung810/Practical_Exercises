@@ -1,6 +1,6 @@
-# TOPIC 01 - FUNDAMENTAL OF C PROGRAMMING LANGUAGE
+# **TOPIC 01 - FUNDAMENTAL OF C PROGRAMMING LANGUAGE**
 
-## 1. Introduction
+## **1. Introduction**
 
 **C** is a general-purpose programming language created by **Dennis Ritchie** at  the Bell Laboratories in **1972**[^1].
 
@@ -10,7 +10,7 @@ It is a very popular language, despite being old. The main reason for its popula
 
 C is strongly associated with UNIX, as it was developed to write the [UNIX](https://en.wikipedia.org/wiki/Unix) operating system.
 
-## 2. Development Environment
+## **2. Development Environment**
 
 In this section, we presenta a development enviroment for working with your C program. A development enviroment is a collection of procedures and tools for developing, testing and debugging an application or program.
 
@@ -18,7 +18,7 @@ In this course, we mainly focus on Cygwin[^2], a framework contains the number o
 
 > Note: **You have to choose the right version of your system, either 32-bit or 64-bit.**
 
-### 2.1 Install Cygwin and GCC
+### **2.1 Install Cygwin and GCC**
 
 After completely download the appropriate setup file, let's begin the installation process.
 
@@ -72,7 +72,7 @@ From **Figure 1** to **Figure 10** show the step-by-step guild to successfully i
 
 ![Installation complete screen](../asset/image/Topic_01/figure10_installation_complete_screen.png)
 
-### 2.2 Add Cygwin to System Path
+### **2.2 Add Cygwin to System Path**
 
 After we have successfully all requirement components to work with C/C++ on Cygwin environment, but you can only call Cygwin commands in Cygwin Terminal. The question is, can call Cygwin commands in within either Windows CMD[^3] command-line or Windows PowerShell. Absoblutely, the answer is "Yes", we need few more steps to do this. First, you need to navigate to System Properties windows by following step-by-step:
 
@@ -84,9 +84,13 @@ With Windows 11:
 
 With Window 10: We can search "edit the system environment variables" and do step 3 similar to Windows 11.
 
-## 3. C Programming Language
+## **3. C Programming Language**
 
 Before we go deeper into C programming language, let's execute your first C program. We should create folder for learning C programming language, we create folder **Topic_01** and sub folder **codes** into **Topic_01** to store source code for this learning.
+
+In this course, we use Text Editor application to write code which is Notepad++[^4]. Currently, there have many applications that support to write code, but it is divided into two names: Text Editor and Integrated Development Environment (IDE). *Why do I choose Text Editor instead of IDE?*
+
+Because this is the fundamental course, so we need to learn some necessary programming knowledges such as how to install development enviroment, compile and run code by command lines. Besides, you can practice and memorize the syntaxes without recommendations, C programming language is the fundamental language, if you understand the basic knowledges of C programming language then you can learn other programming languages easily. Meanwhile, IDE is integrated many support tools such compiler, debugger, formater, etc. Almost IDE is development environment for professional programmer.
 
 In **codes** folder, we create a new file with name file is first_program.c. In this file, you will paste below code into this file:
 
@@ -101,7 +105,7 @@ int main(){
 }
 ```
 
-Although this program is simple, it contains several importaint features of the C/C++ programming language. Lines **1**, **2**, and **5** begin with // symbol, indicates that these lines are comments. You should insert comments to your program for program readbility, and comments are ignored by the compiler. Another wat to make comments to your program is using `/* ... */`, a multi-line comments.
+Although this program is simple, it contains several important features of the **C/C++** programming language. Lines **1**, **2**, and **5** begin with `//` symbol, indicates that these lines are comments. You should insert comments to your program for program readbility, and comments are ignored by the compiler. Another way to make comments to your program is using `/* ... */`, a multi-line comments.
 
 Line **3** is a pre-processor directive, in this case, we tell the preprocessor to include the contents of the **standard input/output header** in the current program. Line **6**, the main function, is a part of every C/C++ program. The parentheses after main indicate that main is a program building block called a function. C/C++ programs contain one or more functions, on of which must be main. Every program in C/C++ begins executing at the function main. The keyword **int** before the **main** function indicates that this function returns an integer value.
 
@@ -115,9 +119,43 @@ In line **8**, we call a statement, printf, to instruct the computer performs an
 | `\\`            | Backslash. Insert a backslash character in a string.            |
 | `\"`            | Double quote. Insert a double-quote character in a string.      |
 
-You had an overview of a program in C. Now, we focus on how to compile your document program to an executable program.
+You had an overview of a program in C. Now, we focus on how to compile your document program to an executable program. We will compile the program by command line on CMD or Cygwin, when the command window shows up, the default directory is user directory, you type `cd` to change folder in CMD (**Figure 11**):
+
+```shell
+cd \d D:/Programming_Methodology/Topic_01/codes/
+```
+
+The syntax `cd` is used to current change directories, the flag `\d` means to change the current drive as well as the current directory for a drive, file first_program.c is placed into D drive and Programming_Methodolody/Topic_01/codes folder.
+
+**Figure 11**: Change the current directory to directory containing file
+![Change current directory to directory containg file](../asset/image/Topic_01/figure11_change_directory.png)
+
+You are currently in the directory containing first_program.c file, type the command as follow `gcc first_program.c -o first_program.exe` or `g++ first_program.c -o first_program.exe`, and the GCC will compile your document program to an executable program (whole file extension is **.exe**) and place in the same window of your document program (**Figure 12**).
+
+**Figure 12**: Compile your program
+![Compile your program](../asset/image/Topic_01/figure12_compile_your_program.png)
+
+After compile from source code to an executable program, to run it, we easily call this program on the CMD window, as in **Figure 13**
+
+**Figure 15**: Run your program
+![Run your program](../asset/image/Topic_01/figure13_run_your_program.png)
+
+The rest of this section is organized as follows: (1) datatypes, (2) variables and constant, (3) arithmetic operators, and (4) control flow.
+
+### **3.1 Datatypes**
+
+The below table shows several fundamental datatypes of C, along with the sizes and the ranges of value instances of these types may have. We must note that bool type is not available in C environment, thus, in case you want to use it, you need include the **stdbool.h** header.
+
+| *Value type* | *Byte* | *Range*                                                                     |
+| :--:         | :--:   | :--:                                                                        |
+| `int`        | 4      | 32-but signed two's complement integer ($-2^{31}$ to $2^{31}-1$, inclusive) |
+| `char`       | 1      | 8-but signed two's complement integer ($-2^{7}$ to $2^{7}-1$, inclusive)    |
+| `float`      | 4      | 32-but IEEE 754 single-precision float, $3.4E+/-38$ (7 digits)              |
+| `double`     | 8      | 64-but IEEE 754 single-precision float, $1.7E+/-308$ (15 digits)            |
+| `bool`       | 1      | `true` or `false`                                                           |
 
 ----
 [^1]: Wikipedia, "C (programming language)", 17 May 2024. [Online]. Available: [Here](https://en.wikipedia.org/wiki/C_(programming_language)) [Accessed 21 May 2021]
 [^2]: [Cygwin](https://www.cygwin.com/)
 [^3]: [CMD.exe](https://en.wikipedia.org/wiki/Cmd.exe)
+[^4]: [Notepad++](https://notepad-plus-plus.org/downloads/)
