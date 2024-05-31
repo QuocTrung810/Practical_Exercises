@@ -8,7 +8,7 @@ int main(){
     you want to show on terminal
 
     printf("My name: Ly Nguyen Quoc Trung\n");
-    printf("Date of birth: 08/10/2002\n");
+    printf("Date of birth: xx/xx/xxxx\n");
     printf("Mobile number: 000000000\n");
     return 0;
 }
