@@ -202,7 +202,98 @@ To calculate the result of an arithmetic expression, C provides some basic arith
 | `-`                   | Subtraction    | $y - z$                         | `y + z`        |
 | `*`                   | Multiplication | $a x b$                         | `a * b`        |
 | `/`                   | Division       | $x/y$ or $\frac{x}{y}$ or $x÷y$ | `x / y`        |
-| `%`                   | Remainder      | r mod s                         | `r%s`          |
+| `%`                   | Remainder      | r mod s                         | `r % s`        |
+
+### **3.4 Control flow**
+
+The control-flow of a language specify the order in which computations are performed. In the above sample programs, we have many declarations and statements, which ended by a semicolun. To group those into a block, we use braces "{" and "}", thus they are syntactically equivalent to a single statement. And there is no semicolon after the right brace that ends a block. The if-else statement is used to express decisions, whose syntax is:
+
+```C
+if(true-false-expression){
+    // Statement1
+}
+else{
+    // Statement2
+}
+```
+
+The `true-false-expression` is evaluated; if it is `true`, `Statement1` is executed, if it is `false`, `Statement2` is executed instead. Conditions in if statements are formed by using the equality operators and relational operators summarized in below table. The relational operators all have the same level of precedence and the associate left to right. The equality operators have a lower level of precedence than the relational operators and they also associate left to right.
+
+| *Algebraic operator* | *C operator* | *Example* | *Meaning*                       |
+| :--:                 | :--:         | :--:      | :--:                            |
+| Equality operators   |              |           |                                 |
+| $=$                  | `==`         | `x == y`  | x is equal to y                 |
+| $\neq$               | `==`         | `x == y`  | x is not equal to y             |
+| Relational operators |              |           |                                 |
+| $>$                  | `>`          | `x > y`   | x is greater than y             |
+| $<$                  | `<`          | `x < y`   | x is less than y                |
+| $\ge$                | `>=`         | `x >= y`  | x is greater than or equal to y |
+| $\le$                | `<=`         | `x <= y`  | x is less than or equal to y    |
+
+### **Else-If Statement**
+
+In Section 3, 4, we introduce the control statement "if - else", which evaluates one condition at a time, in order to sequentially evaluate the conditions, we use "else - if" statement, as follows:
+
+```C
+if(expression1){
+    // Statement1
+}
+else if(expression2){
+    // Statement2
+}
+else if(expression3){
+    // Statement3
+}
+else{
+    // Statement4
+}
+```
+
+By using this structure, the expressions are evaluated in order, if an expression is true, the statement associated with it is executed, and this terminates the whole chain. The last else part handles the "none of the above" or default case, that means, if none of the other conditions is satisfied, the default statement is executed. For example, see the below program.
+
+```C
+// conditional-statements.c
+#include<stdio.h>
+
+int main(){
+    float score = 8.4;
+
+    if(score < 5>){
+        printf("You need to improve your score!");
+    }
+    else if(score < 8){
+        printf("That's OK!");
+    }
+    else if(score < 9){
+        printf("Good!");
+    }
+    else{
+        printf("Excellent!");
+    }
+}
+```
+
+## **4. Exercise**
+
+1. Write a C program to print your name, date of birth, and mobile number
+2. Write a C program prompting user to input two integer numbers, then compute and print the results of addition, subtraction, multiplication, division, and remainder.
+3. Write a C program to compute the perimeter and area of a rectangle with a height provided by user
+4. Write a C program to convert specified days into years, weeks and days. (Note: ignore leap year)
+5. Write a C program to convert the temperature from Celsius to Fahrenheit.
+6. Write a C program to return an absolute value of a number.
+7. Write a C program to check wether a year is a leap year or not.
+8. Write a C program to find maximum between two numbers.
+9. Write a C program to find maximum between three numbers.
+10. Write a C program to check whether a number is even or odd.
+11. Write a C program to input a character and check whether it is alphanumeric or not.
+12. Write a C program to input angles of a triangle and check whether triangle is valid or not.
+13. Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following: \
+    Percentage > 90%: Grade A \
+    Percentage > 80%: Grade B \
+    Percentage > 70%: Grade C \
+    Percentage > 60%: Grade D \
+    Percentage > 40%: Grade E \
+    Percentage < 40%: Grade F
 
 ----
 [^1]: Wikipedia, "C (programming language)", 17 May 2024. [Online]. Available: [Here](https://en.wikipedia.org/wiki/C_(programming_language)) [Accessed 21 May 2021]
