@@ -2,4 +2,4 @@
 
 ## **1. Introduction**
 
-In previvous [topic](../Topic_02/),
+In previvous [topic](../Topic_01/),
