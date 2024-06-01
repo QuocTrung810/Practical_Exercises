@@ -6,7 +6,7 @@ In previvous [topic](../Topic_01/), we learned about the fundamental knowledges 
 
 ## **2. Conditional Structures**
 
-In [Topic](../Topic_01/), we presented a basic form of conditional structure, called if-else. Now, we study a new approach, when we have many cases in making decision with one condition (may contain more than one Boolean expression). Instead of defining many if-else statements, we can use `switch` structure, as follows:
+In [Topic 01](../Topic_01/), we presented a basic form of conditional structure, called if-else. Now, we study a new approach, when we have many cases in making decision with one condition (may contain more than one Boolean expression). Instead of defining many if-else statements, we can use `switch` structure, as follows:
 
 ```C
 switch(expression){
@@ -149,4 +149,4 @@ int main(){
 17. Write a C program to print all Perfect numbers between 1 to n by using three loop structures. Validating the input, in case the input isn't correct, prompt user to enter it again.
 18. Write a C program to convert Decimal to Binary number system.
 19. Write a C program to compute the Factorial of n. Validating the input, in case the input isn't correct, prompt user to enter it again \
-$$n! = 1*2*3*...*n (n \ge 0)$$
+$n! = 1*2*3*...*n (n \ge 0)$
