@@ -150,4 +150,4 @@ int main(){
 18. Write a C program to convert Decimal to Binary number system.
 19. Write a C program to compute the Factorial of n. Validating the input, in case the input isn't correct, prompt user to enter it again
 
-$$n! = 1*2*3*...*n (n \ge 0)$$
+$$n! = 1*2*3*\cdots*n (n \ge 0)$$
