@@ -149,4 +149,4 @@ int main(){
 17. Write a C program to print all Perfect numbers between 1 to n by using three loop structures. Validating the input, in case the input isn't correct, prompt user to enter it again.
 18. Write a C program to convert Decimal to Binary number system.
 19. Write a C program to compute the Factorial of n. Validating the input, in case the input isn't correct, prompt user to enter it again
-$$n!=1*2$$
+$$n!=1*2*3*\cdots*n$$
