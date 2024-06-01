@@ -148,5 +148,6 @@ int main(){
 16. Write a C program to print all Armstrong numbers between 1 to n by using three loop structures. Validating the input, in case the input isn't correct, prompt user to enter it again.
 17. Write a C program to print all Perfect numbers between 1 to n by using three loop structures. Validating the input, in case the input isn't correct, prompt user to enter it again.
 18. Write a C program to convert Decimal to Binary number system.
-19. Write a C program to compute the Factorial of n. Validating the input, in case the input isn't correct, prompt user to enter it again \
-$n! = 1*2*3*...*n (n \ge 0)$
+19. Write a C program to compute the Factorial of n. Validating the input, in case the input isn't correct, prompt user to enter it again
+
+$$n! = 1*2*3*...*n (n \ge 0)$$
