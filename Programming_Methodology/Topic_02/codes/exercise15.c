@@ -19,12 +19,15 @@ int main(){
         printf("Entering the number: ");
         scanf("%d", &number);
         if(number <= 0){
-            printf("The number must be greater than 0.");
+            printf("The number must be greater than 0.\n");
         }
     }
     while(number <= 0);
 
     int is_prime_number;
+
+    // for loop
+    printf("For loop: ");
     // Parent loop to print all number from 1 to n
     for(int i = 1; i <= number; i++){
         is_prime_number = 1;
@@ -39,5 +42,40 @@ int main(){
             printf("%d, ", i);
         }
     }
+
+    // while loop
+    printf("\nWhile loop: ");
+    int i = 1;
+    while(i <= number){
+        is_prime_number = 1;
+        for(int j = 2; j < i; j++){
+            if(i % j == 0){
+                is_prime_number = 0;
+                break;
+            }
+        }
+        if(is_prime_number){
+            printf("%d, ", i);
+        }
+        i++;
+    }
+
+    // Do-while loop
+    printf("\nDo-while loop: ");
+    i = 1;
+    do{
+        is_prime_number = 1;
+        for(int j = 2; j < i; j++){
+            if(i % j == 0){
+                is_prime_number = 0;
+                break;
+            }
+        }
+        if(is_prime_number){
+            printf("%d, ", i);
+        }
+        i++;
+    }
+    while(i <= number);
     return 0;
 }

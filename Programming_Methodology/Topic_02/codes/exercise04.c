@@ -1,7 +1,9 @@
 #include<stdio.h>
 
 int main(){
-    // Write a C program to enter any number and calculate sum of all natural numbers between 1 to n using three loop structures. Validating the input, in case the input isn't correct, prompt user to enter it again.
+    // Write a C program to enter any number and calculate sum of all \
+    natural numbers between 1 to n using three loop structures. Validating \
+    the input, in case the input isn't correct, prompt user to enter it again.
 
     /*
     Three loop structures:

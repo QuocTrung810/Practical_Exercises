@@ -6,7 +6,8 @@ int main(){
     // Wrie a C program to enter any number and check whether the number is palindrome or not.
 
     /*
-    A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a number (such as 16461) that remains the same when its digits are reversed.
+    A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a 
+    number (such as 16461) that remains the same when its digits are reversed.
 
     Originnal number: 123321 = Reversed number: 123321
     => This is palidrome number

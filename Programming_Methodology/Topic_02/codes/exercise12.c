@@ -2,7 +2,8 @@
 
 int main(){
 
-    // Wrie a C program to check whether a number is Prime number or not. Validating the input, in case the input isn't correct, prompt user to enter it again.
+    // Wrie a C program to check whether a number is Prime number or not. Validating the input, \
+    in case the input isn't correct, prompt user to enter it again.
 
     /*
     Prime number is a number that is divisible only by 1 and itself.

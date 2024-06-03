@@ -1,7 +1,9 @@
 #include<stdio.h>
 
 int main(){
-    // Write a C program to print sum of al odd numbers between 1 to n by using three loop structures. Validating the input, in case the input isn't correct, prompt user to enter it again.
+    // Write a C program to print sum of all odd numbers between 1 to \
+    n by using three loop structures. Validating the input, in case the \
+    input isn't correct, prompt user to enter it again.
 
     /*
     Three loop structures:
