@@ -25,11 +25,11 @@ int main(){
 
 
     // Reversing the original number
-    int last_number;
+    int last_digit;
     number = original_number;
     while(num_of_digits != 0){
-        last_number = number % 10;
-        reversed_number += last_number * pow(10, num_of_digits - 1);
+        last_digit = number % 10;
+        reversed_number += last_digit * pow(10, num_of_digits - 1);
         number /= 10;
         num_of_digits--;
     }
