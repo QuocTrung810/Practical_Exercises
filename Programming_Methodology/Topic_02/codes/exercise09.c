@@ -34,7 +34,7 @@ int main(){
     swapped_number = last_digit * pow(10, count-1) + remaining_digits * 10 + first_digit;
 
     // Result
-    printf("Original number: %d -> Swaped number: %d", number, swapped_number);
+    printf("Original number: %d -> Swapped number: %d", number, swapped_number);
 
     return 0;
 }
