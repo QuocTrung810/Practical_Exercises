@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<math.h>
 
+int countNumOfDigits(int);
+int isPalindromeNumber(int);
+
 int main(){
 
     // Write a C function to enter any number and check whether the number is palindrome or not.
@@ -12,35 +15,39 @@ int main(){
     Originnal number: 123321 = Reversed number: 123321
     => This is palidrome number
     */
-    int original_number, reversed_number = 0;
+    int original_number;
 
     printf("Entering the original number: ");
     scanf("%d", &original_number);
 
-    // Count the number of digits of original number
-    int number = original_number, num_of_digits = 0;
+    if(isPalindromeNumber(original_number))
+        printf("%d is palindrome number", original_number);
+    else
+        printf("%d is not palindrome number", original_number);
+
+    return 0;
+}
+
+// Count the number of digits of original number
+int countNumOfDigits(int number){
+    int count = 0;
     while(number > 0){
-        num_of_digits += 1;
-        number /= 10;
+        count += 1;
+        number /= 10; 
     }
+    return count;
+}
 
-
+int isPalindromeNumber(int number){
     // Reversing the original number
-    int last_digit;
-    number = original_number;
+    int last_digit, reversed_number = 0, copied_number = number, num_of_digits = countNumOfDigits(number);
     while(num_of_digits != 0){
-        last_digit = number % 10;
+        last_digit = copied_number % 10;
         reversed_number += last_digit * pow(10, num_of_digits - 1);
-        number /= 10;
+        copied_number /= 10;
         num_of_digits--;
     }
-    // We can use loop function
 
-    if(original_number == reversed_number){
-        printf("%d is palindrome number, with reversed number is %d", original_number, reversed_number);
-    }
-    else{
-        printf("%d is not palindrome number, with reversed number is %d", original_number, reversed_number);
-    }
-    return 0;
+    if(number != reversed_number) return 0;
+    return 1;
 }
