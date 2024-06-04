@@ -220,6 +220,6 @@ of y, we include the pre-defined `math.h` library.
 17. Write a C function to print all Perfect numbers between 1 to *n*. Validating the input, in case the input isn't correct, prompt user to enter it again.
 18. Write a C function to convert Decimal to Binary number system.
 19. Write a C function to compute the Factorial of *n*. Validating the input, in case the input isn't correct, prompt user to enter it again.
-$$ n! = 1 * 2 * 3 * \cdots * n \quad (n \geq 0)$$
+$$n! = 1 * 2 * 3 * \cdots * n \quad (n \geq 0)$$
 
 [^1]: MDN contributors, "Signature (functions)", 8 Jun 2023. [Online]. Availabel: [Signature (functions)](https://developer.mozilla.org/en-US/docs/Glossary/Signature/Function) [Accessed 31 May 2021]
