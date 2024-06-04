@@ -5,7 +5,7 @@ int main(){
 
     //  Write a C program to swap first and last digits of any number
 
-    int number, swaped_number;
+    int number, swapped_number;
 
     printf("Entering the number: ");
     scanf("%d", &number);
@@ -31,10 +31,10 @@ int main(){
     remaining_digits = (number % (int)pow(10, count-1)) / 10;
 
     // Swap first and last digits
-    swaped_number = last_digit * pow(10, count-1) + remaining_digits * 10 + first_digit;
+    swapped_number = last_digit * pow(10, count-1) + remaining_digits * 10 + first_digit;
 
     // Result
-    printf("Original number: %d -> Swaped number: %d", number, swaped_number);
+    printf("Original number: %d -> Swaped number: %d", number, swapped_number);
 
     return 0;
 }
