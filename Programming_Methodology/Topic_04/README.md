@@ -456,7 +456,52 @@ void swap(int *a, int *b){
 
 ### **4.4 Passing array to function**
 
-The function, which can accept a pointer, can also accept an array, because array is a pointer, which points to the first element of array
+The function, which can accept a pointer, can also accept an array, because array is a pointer, which points to the first element of array.
+
+```C
+// array6.c
+#include<stdio.h>
+
+float getAverage(float*, int);
+
+int main(){
+    float average[] = {6, 7, 8, 9, 10};
+
+    float avg = getAverage(average, \
+                    sizeof(average)/sizeof(average[0]));
+
+    printf("Average = %f", avg);
+
+    return 0;
+}
+
+float getAverage(float *arr, int size){
+    float output = 0;
+    int i = 0;
+
+    for(i = 0; i < size; i++){
+        output = output + arr[i];
+    }
+
+    return (float) output / size;
+}
+```
+
+## **5. Exercise**
+
+1. Write functions to calculate the following expressions: \
+  a. $\sum^{n}_{i=1}\frac{i}{2}$ \
+  b. $\sum^{n}_{i=1}(2i + 1)$    \
+  c. $\sum^{n}_{i=1}(i! + 1)$    \
+  d. $\prod^{n}_{i=1}i!$         \
+  e. $\prod^{n}_{i=1}\frac{2i}{3}$
+2. Write function to find the maximum number of an integer array.
+3. Write function to find the minimum number of an integer array.
+4. Write function to sum all numbers of an integer array.
+5. Write function to sum all non-positive numbers of an integer array.
+6. Write function to sum all even numbers of an integer array.
+7. Write function to reverse an array without using any temporary array.
+8. Write program
 
 ----
 [^1]: TylerMSFT, "callloc function", 07 February 2023. [Online]. Availabel: [calloc](https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/calloc?view=msvc-170) [Accessed 5 June 2021]
