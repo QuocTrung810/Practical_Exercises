@@ -220,7 +220,7 @@ int main(){
 
 In the above program, we define an actual variable, called a, and a pointer, called b. Then, in line **8**, we assign the memory's address of a to b. Now, we can easily see that, a and b must have different address, but the value of them are same. When executing the program, we can have the output like this:
 
-```console
+```shell
 Address of a is ffffcbec
 Address of b is ffffcbe0
 Address stored in b is ffffcbec
@@ -262,7 +262,7 @@ int main(){
 
 Executing the program and we have:
 
-```console
+```shell
 Address of a is ffffcbec
 Address of b is ffffcbe0
 Address stored in b is ffffcbec
@@ -301,7 +301,7 @@ int main(){
 
 In above program, we declare an integer pointer, called `ptr`, which points to the first position of integer array, called `arr`. Then, in line **16**, we can use `ptr` to traverse elements in `arr`. Let's execute the program:
 
-```console
+```shell
 Address of arr[0] is ffffcbd0
 Values of arr[0] is 10
 Address of arr[1] is ffffcbd4
@@ -423,7 +423,7 @@ int main(){
 
 In the above program, we use `calloc`[^1] statement to create a dynamic array with size of *n*, and to use it in C environment, we need to include `stdio.h`. Because `calloc` is only available in C environment, we need to use the following command to compile and build this program.
 
-```console
+```shell
 gcc array4.c -o array4.exe
 ```
 
