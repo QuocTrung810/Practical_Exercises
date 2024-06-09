@@ -220,7 +220,7 @@ int main(){
 
 In the above program, we define an actual variable, called a, and a pointer, called b. Then, in line **8**, we assign the memory's address of a to b. Now, we can easily see that, a and b must have different address, but the value of them are same. When executing the program, we can have the output like this:
 
-```shell
+```console
 Address of a is ffffcbec
 Address of b is ffffcbe0
 Address stored in b is ffffcbec
@@ -262,7 +262,7 @@ int main(){
 
 Executing the program and we have:
 
-```shell
+```console
 Address of a is ffffcbec
 Address of b is ffffcbe0
 Address stored in b is ffffcbec
@@ -301,7 +301,7 @@ int main(){
 
 In above program, we declare an integer pointer, called `ptr`, which points to the first position of integer array, called `arr`. Then, in line **16**, we can use `ptr` to traverse elements in `arr`. Let's execute the program:
 
-```shell
+```console
 Address of arr[0] is ffffcbd0
 Values of arr[0] is 10
 Address of arr[1] is ffffcbd4
@@ -421,7 +421,42 @@ int main(){
 }
 ```
 
-In the above program, we use `calloc`[^1] statement
+In the above program, we use `calloc`[^1] statement to create a dynamic array with size of *n*, and to use it in C environment, we need to include `stdio.h`. Because `calloc` is only available in C environment, we need to use the following command to compile and build this program.
+
+```console
+gcc array4.c -o array4.exe
+```
+
+### **4.3 Passing pointer to function**
+
+In previous [topic](../Topic_03/), we introduced C function and how to input to your function. In C, the input parameters are fexible, that means, you can pass variables through argument list and get values back from it. C programming allows passing a pointer a pointer to a function. To do so, simply declare the function parameter as a pointer type.
+
+```C
+// pointers5.c
+#include<stdio.h>
+
+int main(){
+    int a = 5, b = 10;
+
+    printf("a = %d, b = %d\n", a, b);
+
+    swap(&a, &b);
+
+    printf("a = %d, b = %d\n", a, b);
+
+    return 0;
+}
+
+void swap(int *a, int *b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+```
+
+### **4.4 Passing array to function**
+
+The function, which can accept a pointer, can also accept an array, because array is a pointer, which points to the first element of array
 
 ----
 [^1]: TylerMSFT, "callloc function", 07 February 2023. [Online]. Availabel: [calloc](https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/calloc?view=msvc-170) [Accessed 5 June 2021]
