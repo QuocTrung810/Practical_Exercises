@@ -489,12 +489,12 @@ float getAverage(float *arr, int size){
 
 ## **5. Exercise**
 
-1. Write functions to calculate the following expressions:
-  a. $\sum_{i=1}^{n} \frac{i}{2}$
-  b. $\sum_{i=1}^{n}(2i + 1)$
-  c. $\sum_{i=1}^{n}(i! + 1)$
-  d. $\prod_{i=1}^{n}i!$
-  e. $\prod_{i=1}^{n}\frac{2i}{3}$
+1. Write functions to calculate the following expressions:\
+  a. $\sum_{i=1}^{n} \frac{i}{2}$ \
+  b. $\sum_{i=1}^{n} (2i + 1)$ \
+  c. $\sum_{i=1}^{n} (i! + 1)$ \
+  d. $\prod_{i=1}^{n} i!$ \
+  e. $\prod_{i=1}^{n} \frac{2i}{3}$
 2. Write function to find the maximum number of an integer array.
 3. Write function to find the minimum number of an integer array.
 4. Write function to sum all numbers of an integer array.
