@@ -330,8 +330,6 @@ int main(){
     ptr1 = &val;       // ptr1 stores the address of 'val'
     ptr2 = &ptr1;      // ptr2 stores the address of 'ptr1'
 
-    ptr = arr;        // ptr points to 'arr'
-
     printf("Address of val is %x\n", &val);
     printf("Address stored in ptr1 is %x\n", ptr1);
     printf("Address of ptr1 is %x\n", &ptr1);
