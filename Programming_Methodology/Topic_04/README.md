@@ -491,11 +491,11 @@ float getAverage(float *arr, int size){
 
 1. Write functions to calculate the following expressions:
 
-   1. $\sum_{i=1}^{n} \frac{i}{2}$</br></br>
-   2. $\sum_{i=1}^{n} (2i + 1)$</br></br>
-   3. $\sum_{i=1}^{n} (i! + 1)$</br></br>
-   4. $\prod_{i=1}^{n} i!$</br></br>
-   5. $\prod_{i=1}^{n} \frac{2i}{3}$</br></br>
+   1. $$\sum_{i=1}^{n} \frac{i}{2}$$
+   2. $$\sum_{i=1}^{n} (2i + 1)$$
+   3. $$\sum_{i=1}^{n} (i! + 1)$$
+   4. $$\prod_{i=1}^{n} i!$$
+   5. $$\prod_{i=1}^{n} \frac{2i}{3}$$
 
 2. Write function to find the maximum number of an integer array.
 3. Write function to find the minimum number of an integer array.
@@ -503,7 +503,20 @@ float getAverage(float *arr, int size){
 5. Write function to sum all non-positive numbers of an integer array.
 6. Write function to sum all even numbers of an integer array.
 7. Write function to reverse an array without using any temporary array.
-8. Write program
+8. Write program to delete an element from an array at specified position.
+9. Write a program to count total number of duplicate elements in an array.
+10. Write program to delete all duplicate elements from an array.
+11. Write program to count frequency of each element in an array.
+12. Write program to merge two arrat to third array.
+13. Write prgram to put even and odd elements of array into new separate arrays.
+14. Write program to search an element in an array by providing *key* value.
+15. **(*)** Write program to sort array elements in ascending order.
+16. Write program to add two matrices.
+17. Write program to subtract to matrices.
+18. Write program to multiply two matrices.
+19. Write program to check whether two matrices are equal or not.
+20. Write program to find transpose of a matrix.
+21. Write program to find determinant of a matrix.
 
 ----
 [^1]: TylerMSFT, "callloc function", 07 February 2023. [Online]. Availabel: [calloc](https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/calloc?view=msvc-170) [Accessed 5 June 2021]
