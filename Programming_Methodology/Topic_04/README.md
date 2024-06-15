@@ -485,6 +485,10 @@ float getAverage(float *arr, int size){
 }
 ```
 
+### **4.4 Function pointer**
+
+In previous [section](#3-pointers), the symbol `*` use to declare a pointer, it points to another variable address
+
 ## **5. Exercise**
 
 1. Write functions to calculate the following expressions:
@@ -508,7 +512,7 @@ float getAverage(float *arr, int size){
 12. Write program to merge two arrat to third array.
 13. Write prgram to put even and odd elements of array into new separate arrays.
 14. Write program to search an element in an array by providing *key* value.
-15. **(*)** Write program to sort array elements in ascending order.
+15. **(*)** Write program to sort array elements in ascending order[^2].
 16. Write program to add two matrices.
 17. Write program to subtract to matrices.
 18. Write program to multiply two matrices.
@@ -518,3 +522,4 @@ float getAverage(float *arr, int size){
 
 ----
 [^1]: TylerMSFT, "callloc function", 07 February 2023. [Online]. Availabel: [calloc](https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/calloc?view=msvc-170) [Accessed 5 June 2021]
+[^2]: Greeksforgreeks, "Selection Sort - Data Structures and Algorithm Tutorials", 17 April 2024. [Online]. Available: [Selection Sort](https://www.geeksforgeeks.org/selection-sort/) [Accessed 5 June 2021]
