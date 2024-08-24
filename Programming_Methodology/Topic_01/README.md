@@ -53,7 +53,7 @@ From **Figure 1** to **Figure 10** show the step-by-step guild to successfully i
 
 - **gcc-core**: C compiler sub-package.
 - **gcc-g++**: C++ sub-package.
-- **labgcc1**: C runtime library.
+- **libgcc1**: C runtime library.
 - **gdb**: The GNU Debugger.
 - **make**: The GNU version of the 'make' utility.
 - **libmpfr4**: A library for multiple-precision floating-point arithmetic with exact rounding.
@@ -92,7 +92,7 @@ In this course, we use Text Editor application to write code which is Notepad++[
 
 Because this is the fundamental course, so we need to learn some necessary programming knowledges such as how to install development enviroment, compile and run code by command lines. Besides, you can practice and memorize the syntaxes without recommendations, C programming language is the fundamental language, if you understand the basic knowledges of C programming language then you can learn other programming languages easily. Meanwhile, IDE is integrated many support tools such compiler, debugger, formater, etc. Almost IDE is development environment for professional programmer.
 
-In **codes** folder, we create a new file with name file is first_program.c. In this file, you will paste below code into this file:
+In **source_codes** folder, we create a new file with name file is first_program.c. In this file, you will paste below code into this file:
 
 ```C
 // first_program.c
