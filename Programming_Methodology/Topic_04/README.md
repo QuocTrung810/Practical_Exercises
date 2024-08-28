@@ -509,8 +509,8 @@ In previous [section](#3-pointers), the symbol `*` use to declare a pointer, it 
 9. Write a program to count total number of duplicate elements in an array.
 10. Write program to delete all duplicate elements from an array.
 11. Write program to count frequency of each element in an array.
-12. Write program to merge two arrat to third array.
-13. Write prgram to put even and odd elements of array into new separate arrays.
+12. Write program to merge two array to third array.
+13. Write program to put even and odd elements of array into new separate arrays.
 14. Write program to search an element in an array by providing *key* value.
 15. **(*)** Write program to sort array elements in ascending order[^2].
 16. Write program to add two matrices.
