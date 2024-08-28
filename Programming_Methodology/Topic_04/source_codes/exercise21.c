@@ -32,6 +32,11 @@ int main(){
         exit(0);
     }
 
+    if(num_of_rows != num_of_cols){
+        printf("The number of rows and columns must be same");
+        exit(0);
+    }
+
     // Initialize matrix automatically by random function
     int min = -10, max = 10;
     init_random_matrix(matrix, num_of_rows, num_of_cols, min, max);
