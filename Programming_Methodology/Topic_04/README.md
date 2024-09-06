@@ -370,7 +370,7 @@ int main(){
     int i = 0;
 
     for(i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-        printf("arr[%d] = %d", i. arr[i]);
+        printf("arr[%d] = %d", i, arr[i]);
     }
 
     return 0;
