@@ -13,7 +13,7 @@
     7. $$\prod_{i=1}^{n}\frac{2i}{3}$$
     8. $$\prod_{i=1}^{n}\frac{(i-1)}{(i+1)}$$
 
-2. Write a C function to enter any number and check wether the number is palindrome or not.
+2. Write a C function to enter any number and check wether the number is Palindrome or not.
 3. Write a C function to check whether a number is Prime number of not. Validating the input, in case the input isn't correct, promp user to enter it again.
 4. Write a C function to check whether a number is Armstrong number or not.
 5. Write a C function to check whether a number is Perfect number of not.
@@ -35,7 +35,7 @@
 21. Write program to merge two array to third array.
 22. Write program to put even and odd elements of array into two new separate arrays.
 23. Write program to search an element in an array by providing `key` value.
-24. (*)Write program to sort array elements in ascending order.
+24. **(*)**Write program to sort array elements in ascending order.
 25. Write program to add two matrices.
 26. Write program to subtract two matrices.
 27. Write program to multiply two matrices.
