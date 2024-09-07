@@ -155,5 +155,5 @@ Therefore, the running time complexity of selection sort algorithmis $O(n^{2})$.
 
 1. Implement the sequential search algorithm.
 2. Implement the binary search algorithm.
-3. Implement the selection sort algorithm for sorting a list is descendant order.
-4. Implement the bubble sort algorithm for sorting a list is descendant order.
+3. Implement the selection sort algorithm for sorting a list is descending order.
+4. Implement the bubble sort algorithm for sorting a list is descending order.
