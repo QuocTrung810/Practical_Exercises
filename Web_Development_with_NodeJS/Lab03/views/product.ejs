@@ -45,10 +45,10 @@
     
     <div class="row justify-content-center mt-2">
         <div class="m-4 m-md-0 col-md-5 col-lg-4 p-3 border rounded mr-lg-3">
-            <img class="mw-100 rounded" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=1144&hei=1144&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1591634795000">
+            <img class="mw-100 rounded" src="<%= locals.imgPath || '' %>">
         </div>
         <div class="m-4 m-md-0 col-md-7 col-lg-6 border rounded p-4">
-            <h3 class="text-primary">Macbook Air M1 256GB</h3>
+            <h3 class="text-primary"><%= locals.name || '' %></h3>
             <span class="badge badge-primary">256GB</span>
             <div class="my-3">
                 <span class="fa fa-star checked"></span>
@@ -57,9 +57,9 @@
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
             </div>
-            <h4 class="text-danger text-bold">$1,200</h4>
+            <h4 class="text-danger text-bold">$<%= locals.price || '' %></h4>
             <div class="text-secondary text-justify">
-                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis dolore quos sapiente tempore alias.</p>
+                <p class="text-dark"><%= locals.desc || '' %></p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sapiente illo. Sit error voluptas repellat rerum quidem, soluta enim perferendis voluptates laboriosam. Distinctio, officia quis dolore quos sapiente tempore alias.
             </div>
             <div class="mt-3">
